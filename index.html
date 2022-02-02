@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      #grad1 {
+        height: 800%;
+        background-image: linear-gradient(
+          to right,
+          rgb(160, 209, 238),
+          rgb(240, 240, 121)
+        );
+        background-size: cover;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+
+      li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      #top .active {
+        background-color: #038af8;
+      }
+
+      div.headbackground {
+        width: 100%;
+        height: 400px;
+        background-image: url("heading.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        background-color: rgba(255, 255, 255, 0.486);
+        background-blend-mode: lighten;
+      }
+
+      hr.solid {
+        border-top: 3px solid rgb(0, 0, 0);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .img-container {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      a:link,
+      a:visited {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(173, 185, 173);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      #bottom a:hover,
+      a:active {
+        background-color: rgb(173, 185, 173);
+        opacity: 0.5;
+        color: rgb(110, 106, 106);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headbackground">
+      <h1
+        style="
+          font-size: 90px;
+          text-align: center;
+          font-family: cursive;
+          text-shadow: 1px 1px 2px rgb(250, 250, 250), 0 0 25px rgb(0, 89, 255),
+            0 0 5px darkblue;
+        "
+      >
+        Woodlands Waterfront Park
+      </h1>
+      <p style="text-align: center; font-size: 30px">
+        Woodlands Waterfront Park is well-known for its tranquility and close
+        proximity to Malaysia's Johor Bahru. <br />This scenic coastal park
+        offers an attractive and panaromic view of the causeway and the Straits
+        of Johor. In addition, Woodlands Waterfront Park not only accomodates a
+        wide range of equiments that both the young and old can enjoy, but it is
+        also home to a variety of fauna and fiona.
+      </p>
+    </div>
+
+    <div id="grad1">
+      <div id="top">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <br />
+
+      <h2
+        style="
+          padding-left: 25px;
+          font-weight: bold;
+          text-decoration: underline;
+          font-size: 30pt;
+        "
+      >
+        Park Information
+      </h2>
+      <p style="font-size: 18pt; text-align: center; padding-right: 25px">
+        <img
+          src="sign.jpeg"
+          ;
+          alt="Sign"
+          ;
+          style="
+            width: 600px;
+            height: 400px;
+            margin-right: 15px;
+            padding-left: 25px;
+            float: left;
+          "
+          ;
+        />
+        <br />
+        <br />
+        <br />
+        <br />
+        Get as close as you can to our neighbouring country Malaysia at
+        Woodlands Waterfront! Located in the north of Singapore, the park is
+        situated at the edge of Singapore, making it the furthest point away
+        from the mainland. The 11-hectare park houses a variety of equipments
+        that cater to the young and old, ideal for recreational activities and
+        family bonding.
+      </p>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2
+        style="
+          font-size: 30pt;
+          text-decoration: underline;
+          font-weight: bold;
+          text-align: center;
+        "
+      >
+        Things To Do
+      </h2>
+
+      <div class="clearfix">
+        <div class="img-container">
+          <img
+            src="sunset.jpeg"
+            alt="Sunset"
+            style="width: 100%; height: 300px"
+          />
+        </div>
+        <div class="img-container">
+          <img
+            src="playground.jpeg"
+            alt="Playground"
+            style="width: 100%; height: 300px"
+          />
+        </div>
+        <div class="img-container">
+          <img
+            src="restaurant.jpeg"
+            alt="Restaurant"
+            style="width: 100%; height: 300px"
+          />
+        </div>
+
+        <div class="clearfix">
+          <div class="img-container">
+            <p style="width: 100%; height: 100px; text-align: center">
+              <span style="font-weight: bold; font-size: 20px"
+                >Enjoy scenery</span
+              >
+              <br />
+              <br />
+              Catch amazing views of the sunset/sunrise
+            </p>
+          </div>
+          <div class="img-container">
+            <p style="width: 100%; height: 100px; text-align: center">
+              <span style="font-weight: bold; font-size: 20px"
+                >Family bonding</span
+              >
+              <br />
+              <br />
+              Experience a Singaporean version of ninja warrior at the
+              multigenerational playground
+            </p>
+          </div>
+          <div class="img-container">
+            <p style="width: 100%; height: 100px; text-align: center">
+              <span style="font-weight: bold; font-size: 20px">Dining</span>
+              <br />
+              <br />
+              Try some amazing seafood along with exquisite views at the Rasa
+              Istimewa Restaurant
+            </p>
+          </div>
+
+          <div class="img-container">
+            <img
+              src="fishing.jpeg"
+              alt="Fishing"
+              style="width: 100%; height: 300px"
+            />
+          </div>
+          <div class="img-container">
+            <img
+              src="exercise.jpeg"
+              alt="Exercise"
+              style="width: 100%; height: 300px"
+            />
+          </div>
+          <div class="img-container">
+            <img
+              src="monkey.jpeg"
+              alt="Wildlife"
+              style="width: 100%; height: 300px"
+            />
+          </div>
+
+          <div class="clearfix">
+            <div class="img-container">
+              <p style="width: 100%; height: 100px; text-align: center">
+                <span style="font-weight: bold; font-size: 20px">Fishing</span>
+                <br />
+                <br />
+                Try fishing for a hobby at Singapore’s longest jetty
+              </p>
+            </div>
+            <div class="img-container">
+              <p style="width: 100%; height: 100px; text-align: center">
+                <span style="font-weight: bold; font-size: 20px">Exercise</span>
+                <br />
+                <br />
+                Exercise or workout with a view along the 1.5km Waterfront
+                promenade
+              </p>
+            </div>
+            <div class="img-container">
+              <p style="width: 100%; height: 100px; text-align: center">
+                <span style="font-weight: bold; font-size: 20px">Wildlife</span>
+                <br />
+                <br />
+                Get up close with the wide variety of flora and fauna living in
+                woodlands Waterfront
+              </p>
+            </div>
+          </div>
+
+          <h2
+            style="
+              font-size: 30pt;
+              text-decoration: underline;
+              font-weight: bold;
+              text-align: center;
+            "
+          >
+            How To Get There
+          </h2>
+
+          <img src="MAP.jpeg" alt="Map" class="center" />
+
+          <p style="text-align: center; font-size: 12pt">
+            <span style="font-weight: bold; font-size: 15pt">Bus Service:</span>
+            <br />
+            856 from Yishun or Woodlands Interchange
+          </p>
+          <br />
+          <br />
+          <br />
+          <div class="container">
+            <img src="Jetty.jpeg" alt="Jetty" style="width: 70%" />
+            <div class="centered">
+              <span style="font-size: 20pt; font-weight: bold; color: black"
+                >For more information,
+                <br />
+                please visit the official website</span
+              >
+              <br />
+              <div id-"bottom">
+            </div>
+            <a
+              href="https://www.nparks.gov.sg/gardens-parks-and-nature/parks-and-nature-reserves/woodlands-waterfront-park"
+              target="_blank"
+              >Woodlands Waterfront</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
